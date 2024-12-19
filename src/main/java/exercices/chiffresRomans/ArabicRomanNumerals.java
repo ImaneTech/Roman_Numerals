@@ -7,6 +7,8 @@ public class ArabicRomanNumerals {
             result = "I";
         }else if (nbr == 2) {
             result = "II";
+        }else if (nbr == 3) {
+            result = "III";
         }
         return result;
     }

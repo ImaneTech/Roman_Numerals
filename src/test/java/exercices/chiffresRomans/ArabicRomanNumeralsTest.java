@@ -30,5 +30,18 @@ public class ArabicRomanNumeralsTest {
         assertThat(actualResult).isEqualTo(expectedResult);
 
     }
+
+    @Test
+    public void return_III_for_3(){
+        //GIVEN
+        String expectedResult ="III";
+        //WHEN
+        String actualResult =ArabicRomanNumerals.convert(3);
+
+        //THEN
+        assertThat(actualResult).isEqualTo(expectedResult);
+
+    }
 }
+
 

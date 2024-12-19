@@ -53,6 +53,29 @@ public class ArabicRomanNumeralsTest {
         assertThat(actualResult).isEqualTo(expectedResult);
 
     }
+    @Test
+    public void return_X_for_10(){
+        //GIVEN
+        String expectedResult ="X";
+        //WHEN
+        String actualResult =ArabicRomanNumerals.convert(10);
+
+        //THEN
+        assertThat(actualResult).isEqualTo(expectedResult);
+
+    }
+    @Test
+    public void return_XIII_for_13(){
+        //GIVEN
+        String expectedResult ="XIII";
+        //WHEN
+        String actualResult =ArabicRomanNumerals.convert(13);
+
+        //THEN
+        assertThat(actualResult).isEqualTo(expectedResult);
+
+    }
+
 }
 
 

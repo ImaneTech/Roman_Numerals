@@ -1,21 +1,29 @@
 package exercices.chiffresRomans;
+import java.util.HashMap;
 
 public class ArabicRomanNumerals {
     public static String convert(int nbr) {
         String result = "";
-        if (nbr >=10){
-            result = "X";
+
+        while (nbr >=10){
+            result += "X";
             nbr -=10;
+        }
+        if (nbr ==9){
+            result += "IX";
+            nbr -=9;
         }
          if (nbr >=5){
              result += "V";
              nbr -= 5;
          }
-        for (int i = 0; i < nbr; i++) {
-            result += "I";
-        }
         if (nbr == 4){
-            result = "IV";
+            result += "IV";
+            nbr-=4;
+        }
+        while(nbr >= 1){
+            result += "I";
+            nbr-=1;
         }
         return result;
     }

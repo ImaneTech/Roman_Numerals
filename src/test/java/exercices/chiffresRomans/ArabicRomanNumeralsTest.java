@@ -42,6 +42,20 @@ public class ArabicRomanNumeralsTest {
         assertThat(actualResult).isEqualTo(expectedResult);
 
     }
+    @Test
+    public void return_IV_for_4(){
+        //GIVEN
+        String expectedResult ="IV";
+        //WHEN
+        String actualResult =ArabicRomanNumerals.convert(4);
+
+        //THEN
+        assertThat(actualResult).isEqualTo(expectedResult);
+
+    }
 }
+
+
+
 
 

@@ -75,6 +75,17 @@ public class ArabicRomanNumeralsTest {
         assertThat(actualResult).isEqualTo(expectedResult);
 
     }
+    @Test
+    public void return_XXXIX_for_39(){
+        //GIVEN
+        String expectedResult ="XXXIX";
+        //WHEN
+        String actualResult =ArabicRomanNumerals.convert(39);
+
+        //THEN
+        assertThat(actualResult).isEqualTo(expectedResult);
+
+    }
 
 }
 

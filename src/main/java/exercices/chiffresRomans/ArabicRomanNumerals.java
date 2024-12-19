@@ -4,10 +4,10 @@ public class ArabicRomanNumerals {
     public static String convert(int nbr) {
         String result = "";
         if (nbr == 1) {
-            return "I";
+            result = "I";
         }else if (nbr == 2) {
-            return "II";
+            result = "II";
         }
-        return "";
+        return result;
     }
 }
